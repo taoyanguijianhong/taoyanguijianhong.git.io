@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on ExampleSite</title>
+    <link>http://taoyanguijianhong.github.io/post/</link>
+    <description>Recent content in Posts on ExampleSite</description>
+    <image>
+      <url>http://taoyanguijianhong.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://taoyanguijianhong.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 11 Dec 2022 17:54:56 +0800</lastBuildDate><atom:link href="http://taoyanguijianhong.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Second</title>
+      <link>http://taoyanguijianhong.github.io/post/second/</link>
+      <pubDate>Sun, 11 Dec 2022 17:54:56 +0800</pubDate>
+      
+      <guid>http://taoyanguijianhong.github.io/post/second/</guid>
+      <description>二、课堂笔记 1、认识Linux系统 2、文件系统命令1 常用Shell快捷键 Tab键：自动补齐 快捷键 Ctrl+U:清空至首行 快捷键 Ctrl+L:清屏 上：上一条历史记录 下：下一条历史记录 目录操作命令 pwd:显示当前工作目录的绝对路径 cd:更改工作目录路径,其中.代表当前所在目录；..代表当前目录位置的上一层目录；~代表家目录 mkdir:创建目录 ls:列出目录和文件信息 rmdir:删除空目录 touch:创建空文件、更改文件时间 cp:复制文件或目录 mv:文件和目录改名、移动文件和目录 rm -rf:删除目录 通配符的使用 ?:匹配任意一个字符 *:匹配任意多个字符 []:相当于或的意思 -:代表一个范围，比如a-z 3、Vim编辑器 光速入门 i:插入 Esc:退出插入 :w:保存 :q:退出 :q!:强制退出（不保存文件） 4、文件系统命令2 搜索文件 find：查找文件或目录 which：用来搜索二进制文件、可执行文件或者shell命令行的位置 文件内容操作命令 cat:显示文件内容、连接文件内容 head:显示指定文件的前若干行 tail:查看文件末尾数据 grep:搜索与字符串匹配的行 打包和解包 打包：tar -czvf 打包文件名 .tar.gz 源文件或目录 tar -cjvf 打包文件名 .tar.bz2 源文件或目录 tar -cJvf 打包文件名 .tar.xz 源文件或目录 zip打包：zip -r *.zip * 解包：tar -xzvf 打包文件名 .tar.gz [-C 解压目录] tar -xjvf 打包文件名 .</description>
+    </item>
+    
+    <item>
+      <title>Fist</title>
+      <link>http://taoyanguijianhong.github.io/post/fist/</link>
+      <pubDate>Sun, 11 Dec 2022 15:15:48 +0800</pubDate>
+      
+      <guid>http://taoyanguijianhong.github.io/post/fist/</guid>
+      <description>一、Linux大作业完成步骤 第一题实验步骤： 1.在linux下安装git,并生成授信证书： sudo yum install git ssh -keygen -t rsa -C &amp;quot;1248059716@qq.com&amp;quot; 2.查看Github版本并建立和GitHub的联系： git version cd /home/euler/ .ssh/ vi id_rsa.pub 3.验证是否配置成功 ssh git@github.com 4.从本地新建项目，提交上传至GitHub mkdir git_space cd git_space/ git init vim callback_example_2 git add callback_example_2 git status git commit -m &amp;quot;新建项目&amp;quot; 5.在Github中创建远程仓库 仓库地址使用SSH协议，如果用https地址每次push/pull都要输入GitHub账号密码。 将GitHub上面的命令git remote add origin git@github.com:taoyanguijianhong/studyspace.git git push -u origin master 第二题步骤： 1.先写一个客户端client.c： #include&amp;lt;stdio.h&amp;gt; #include&amp;lt;unistd.h&amp;gt; #include&amp;lt;stdlib.h&amp;gt; #include&amp;lt;sys/socket.h&amp;gt; #include&amp;lt;arpa/inet.h&amp;gt; #include&amp;lt;string.h&amp;gt; #define SERV_IP &amp;quot;127.0.0.1&amp;quot; #define SERV_PORT 8888 int main(void) { int cfd,ret; struct sockaddr_in serv_addr; char buf[BUFSIZ]; int n; cfd=socket(AF_INET,SOCK_STREAM,0); if( cfd &amp;lt; 0){ perror(&amp;quot;socket error&amp;quot;); exit(1); } memset(&amp;amp;serv_addr,0,sizeof(serv_addr));//memset把serv_addr指针清成空，防止默认有的时候初始化失败，默认那个值取随机值 serv_addr.</description>
+    </item>
+    
+  </channel>
+</rss>
